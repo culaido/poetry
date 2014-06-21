@@ -1,0 +1,12 @@
+{
+	"mbox":[
+		{"mod_playlist":{"my":""}},
+		{"mod_playlist":{"list":""}},
+		{"mod_playlist":{"hotest":{"limit":20}}}
+	],
+	"xbox":[
+		{"playlist":{"title":""}},
+		{"playlist":{"start":""}},
+		{"playlist":{"play":""}}
+	]
+}

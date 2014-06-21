@@ -1,0 +1,17 @@
+body#login {background:url(./images/bg.jpg) no-repeat center 50px fixed}
+
+
+#login .panel {background: rgba(255, 255, 255, .8);}
+
+.hint {color:#888}
+
+
+/* theme */
+
+.fa-sysop, .fa-admin, .fa-worship, .fa-studentmember, .fa-member {width:16px; height:16px}
+
+.fa-sysop			{background-image:url(./images/user_gray.png)}
+.fa-admin			{background-image:url(./images/user_orange.png)}
+.fa-worship			{background-image:url(./images/user_red.png)}
+.fa-studentmember	{background-image:url(./images/user_green.png)}
+.fa-member  		{background-image:url(./images/user.png)}

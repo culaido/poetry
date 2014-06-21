@@ -1,0 +1,17 @@
+{
+	"xbox":[
+		{"mod_carousel":{"show":""}}
+	],
+
+	"intro":[
+		{"index":{"info":""}}
+	],
+
+	"mbox":[
+		{"mod_playlist":{"list":""}},
+		{"mod_poetry":	{"hotest":""}},
+		{"mod_poetry":	{"newest":""}},
+		{"mod_tag":		{"cloud":""}},
+		{"mod_folder":{"list":""}}
+	]
+}

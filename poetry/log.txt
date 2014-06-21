@@ -1,0 +1,516 @@
+[file: /home/a4834786/public_html/sys/core/sys.php line: 139] 2014-01-13 16:01:19:
+ #0  db::showErr(INSERT INTO file_upload SET
+			pageId	= :pageId,
+			srcName	= :srcName,
+			name	= :name,
+			path	= :path,
+			createTime = NOW(),
+			size	= :size,
+			userID	= :userID,
+			mimeType= :mimeType, Array ([:pageId] => poetry.616,[:srcName] => 滿有能力.png,[:path] => /sysdata/attach/poetry.616/52d39d432c988.png,[:name] => 52d39d432c988.png,[:size] => 748515,[:userID] => 1,[:mimeType] => image/png)) called at [/home/a4834786/public_html/sys/core/sys.php:139]
+#1  db::query(INSERT INTO file_upload SET
+			pageId	= :pageId,
+			srcName	= :srcName,
+			name	= :name,
+			path	= :path,
+			createTime = NOW(),
+			size	= :size,
+			userID	= :userID,
+			mimeType= :mimeType, Array ([:pageId] => poetry.616,[:srcName] => 滿有能力.png,[:path] => /sysdata/attach/poetry.616/52d39d432c988.png,[:name] => 52d39d432c988.png,[:size] => 748515,[:userID] => 1,[:mimeType] => image/png)) called at [/home/a4834786/public_html/sys/modules/mod_fileUpload/mod_fileUpload.php:166]
+#2  CustomUploadHandler->handle_file_upload(/tmp/phpUYnQ8M, 滿有能力.png, 748515, image/png, 0, 0, ) called at [/home/a4834786/public_html/sys/modules/mod_fileUpload/UploadHandler.php:1285]
+#3  UploadHandler->post() called at [/home/a4834786/public_html/sys/modules/mod_fileUpload/UploadHandler.php:171]
+#4  UploadHandler->initialize() called at [/home/a4834786/public_html/sys/modules/mod_fileUpload/mod_fileUpload.php:139]
+#5  CustomUploadHandler->initialize() called at [/home/a4834786/public_html/sys/modules/mod_fileUpload/UploadHandler.php:155]
+#6  UploadHandler->__construct(Array ([user_dirs] => ,[random_file_name] => 1,[param_name] => mod_notation_0_notation-type2,[pageId] => poetry.616,[upload_dir] => /home/a4834786/public_html/sysdata/attach/poetry.616/,[upload_url] => /home/a4834786/public_html/sysdata/attach/poetry.616/)) called at [/home/a4834786/public_html/sys/modules/mod_fileUpload/mod_fileUpload.php:54]
+#7  mod_fileUpload->ax_upload(Array ()) called at [/home/a4834786/public_html/sys/core/app.php:392]
+#8  App->ajax(Array ([page] => ajax,[action] => sys.modules.mod_fileUpload,[param] => Array ([0] => mod_fileUpload.upload,[1] => ))) called at [/home/a4834786/public_html/sys/core/sys.php:220]
+#9  sys::init() called at [/home/a4834786/public_html/index.php:5]
+
+ SQL: INSERT INTO file_upload SET
+			pageId	= :pageId,
+			srcName	= :srcName,
+			name	= :name,
+			path	= :path,
+			createTime = NOW(),
+			size	= :size,
+			userID	= :userID,
+			mimeType= :mimeType
+Array
+(
+    [:pageId] => poetry.616
+    [:srcName] => 滿有能力.png
+    [:path] => /sysdata/attach/poetry.616/52d39d432c988.png
+    [:name] => 52d39d432c988.png
+    [:size] => 748515
+    [:userID] => 1
+    [:mimeType] => image/png
+)
+
+[file: /home/a4834786/public_html/sys/core/sys.php line: 139] 2014-01-13 16:01:19:
+ 
+ Error: MySQL server has gone away
+[file: /home/a4834786/public_html/sys/core/sys.php line: 139] 2014-01-13 16:01:19:
+ #0  db::showErr(UPDATE session SET expiry=:expiry, vvalue=:vvalue, _userID=:userID, _cnt=_cnt+1 WHERE sessKey=:sesskey, Array ([:expiry] => 1389614479,[:vvalue] => auth|s:23:"52d391d1672af4.22633466";_sess_sysconfig|a:0:{}_sess_HTTP_SERVER_VARS|a:30:{s:15:"REDIRECT_STATUS";s:3:"200";s:9:"HTTP_HOST";s:17:"poetry.host56.com";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:11:"HTTP_ACCEPT";s:74:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8";s:15:"HTTP_USER_AGENT";s:108:"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.72 Safari/537.36";s:12:"HTTP_REFERER";s:25:"http://poetry.host56.com/";s:20:"HTTP_ACCEPT_ENCODING";s:17:"gzip,deflate,sdch";s:20:"HTTP_ACCEPT_LANGUAGE";s:56:"zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4,ja;q=0.2,zh-CN;q=0.2";s:11:"HTTP_COOKIE";s:54:"timezone=8; PHPSESSID=94b7acd95769a1cb320a742829d79c8e";s:4:"PATH";s:29:"/sbin:/bin:/usr/sbin:/usr/bin";s:16:"SERVER_SIGNATURE";s:0:"";s:15:"SERVER_SOFTWARE";s:6:"Apache";s:11:"SERVER_NAME";s:17:"poetry.host56.com";s:11:"SERVER_ADDR";s:14:"31.170.160.229";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:13:"59.120.37.117";s:13:"DOCUMENT_ROOT";s:24:"/usr/local/apache/htdocs";s:12:"SERVER_ADMIN";s:20:"admin@000webhost.com";s:15:"SCRIPT_FILENAME";s:32:"/www/poetry.host56.com/index.php";s:11:"REMOTE_PORT";s:5:"59680";s:21:"REDIRECT_QUERY_STRING";s:14:"route=poetry/2";s:12:"REDIRECT_URL";s:9:"/poetry/2";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:3:"GET";s:12:"QUERY_STRING";s:14:"route=poetry/2";s:11:"REQUEST_URI";s:9:"/poetry/2";s:11:"SCRIPT_NAME";s:10:"/index.php";s:8:"PHP_SELF";s:10:"/index.php";s:12:"REQUEST_TIME";i:1389597137;}login.next|s:1:"/";_sess_user_id|s:1:"1";_sess_user_account|s:5:"sysop";_sess_user_name|s:15:"系統管理員";_sess_user_email|s:17:"culaido@gmail.com";_sess_user_role|s:3:"1,0";_sess_user_roleAry|a:2:{i:0;s:1:"1";i:1;i:0;}loginSince|i:1389597208;view|a:1:{s:6:"poetry";a:1:{i:616;i:1;}},[:sesskey] => 94b7acd95769a1cb320a742829d79c8e,[:userID] => 1)) called at [/home/a4834786/public_html/sys/core/sys.php:139]
+#1  db::query(UPDATE session SET expiry=:expiry, vvalue=:vvalue, _userID=:userID, _cnt=_cnt+1 WHERE sessKey=:sesskey, Array ([:expiry] => 1389614479,[:vvalue] => auth|s:23:"52d391d1672af4.22633466";_sess_sysconfig|a:0:{}_sess_HTTP_SERVER_VARS|a:30:{s:15:"REDIRECT_STATUS";s:3:"200";s:9:"HTTP_HOST";s:17:"poetry.host56.com";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:11:"HTTP_ACCEPT";s:74:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8";s:15:"HTTP_USER_AGENT";s:108:"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.72 Safari/537.36";s:12:"HTTP_REFERER";s:25:"http://poetry.host56.com/";s:20:"HTTP_ACCEPT_ENCODING";s:17:"gzip,deflate,sdch";s:20:"HTTP_ACCEPT_LANGUAGE";s:56:"zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4,ja;q=0.2,zh-CN;q=0.2";s:11:"HTTP_COOKIE";s:54:"timezone=8; PHPSESSID=94b7acd95769a1cb320a742829d79c8e";s:4:"PATH";s:29:"/sbin:/bin:/usr/sbin:/usr/bin";s:16:"SERVER_SIGNATURE";s:0:"";s:15:"SERVER_SOFTWARE";s:6:"Apache";s:11:"SERVER_NAME";s:17:"poetry.host56.com";s:11:"SERVER_ADDR";s:14:"31.170.160.229";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:13:"59.120.37.117";s:13:"DOCUMENT_ROOT";s:24:"/usr/local/apache/htdocs";s:12:"SERVER_ADMIN";s:20:"admin@000webhost.com";s:15:"SCRIPT_FILENAME";s:32:"/www/poetry.host56.com/index.php";s:11:"REMOTE_PORT";s:5:"59680";s:21:"REDIRECT_QUERY_STRING";s:14:"route=poetry/2";s:12:"REDIRECT_URL";s:9:"/poetry/2";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:3:"GET";s:12:"QUERY_STRING";s:14:"route=poetry/2";s:11:"REQUEST_URI";s:9:"/poetry/2";s:11:"SCRIPT_NAME";s:10:"/index.php";s:8:"PHP_SELF";s:10:"/index.php";s:12:"REQUEST_TIME";i:1389597137;}login.next|s:1:"/";_sess_user_id|s:1:"1";_sess_user_account|s:5:"sysop";_sess_user_name|s:15:"系統管理員";_sess_user_email|s:17:"culaido@gmail.com";_sess_user_role|s:3:"1,0";_sess_user_roleAry|a:2:{i:0;s:1:"1";i:1;i:0;}loginSince|i:1389597208;view|a:1:{s:6:"poetry";a:1:{i:616;i:1;}},[:sesskey] => 94b7acd95769a1cb320a742829d79c8e,[:userID] => 1), ) called at [/home/a4834786/public_html/sys/core/session.php:81]
+#2  session->sess_write(94b7acd95769a1cb320a742829d79c8e, auth|s:23:"52d391d1672af4.22633466";_sess_sysconfig|a:0:{}_sess_HTTP_SERVER_VARS|a:30:{s:15:"REDIRECT_STATUS";s:3:"200";s:9:"HTTP_HOST";s:17:"poetry.host56.com";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:11:"HTTP_ACCEPT";s:74:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8";s:15:"HTTP_USER_AGENT";s:108:"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.72 Safari/537.36";s:12:"HTTP_REFERER";s:25:"http://poetry.host56.com/";s:20:"HTTP_ACCEPT_ENCODING";s:17:"gzip,deflate,sdch";s:20:"HTTP_ACCEPT_LANGUAGE";s:56:"zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4,ja;q=0.2,zh-CN;q=0.2";s:11:"HTTP_COOKIE";s:54:"timezone=8; PHPSESSID=94b7acd95769a1cb320a742829d79c8e";s:4:"PATH";s:29:"/sbin:/bin:/usr/sbin:/usr/bin";s:16:"SERVER_SIGNATURE";s:0:"";s:15:"SERVER_SOFTWARE";s:6:"Apache";s:11:"SERVER_NAME";s:17:"poetry.host56.com";s:11:"SERVER_ADDR";s:14:"31.170.160.229";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:13:"59.120.37.117";s:13:"DOCUMENT_ROOT";s:24:"/usr/local/apache/htdocs";s:12:"SERVER_ADMIN";s:20:"admin@000webhost.com";s:15:"SCRIPT_FILENAME";s:32:"/www/poetry.host56.com/index.php";s:11:"REMOTE_PORT";s:5:"59680";s:21:"REDIRECT_QUERY_STRING";s:14:"route=poetry/2";s:12:"REDIRECT_URL";s:9:"/poetry/2";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:3:"GET";s:12:"QUERY_STRING";s:14:"route=poetry/2";s:11:"REQUEST_URI";s:9:"/poetry/2";s:11:"SCRIPT_NAME";s:10:"/index.php";s:8:"PHP_SELF";s:10:"/index.php";s:12:"REQUEST_TIME";i:1389597137;}login.next|s:1:"/";_sess_user_id|s:1:"1";_sess_user_account|s:5:"sysop";_sess_user_name|s:15:"系統管理員";_sess_user_email|s:17:"culaido@gmail.com";_sess_user_role|s:3:"1,0";_sess_user_roleAry|a:2:{i:0;s:1:"1";i:1;i:0;}loginSince|i:1389597208;view|a:1:{s:6:"poetry";a:1:{i:616;i:1;}}) called at [(null):0]
+#3  session_write_close() called at [/home/a4834786/public_html/sys/core/session.php:98]
+#4  session->__destruct() called at [(null):0]
+
+ SQL: UPDATE session SET expiry=:expiry, vvalue=:vvalue, _userID=:userID, _cnt=_cnt+1 WHERE sessKey=:sesskey
+Array
+(
+    [:expiry] => 1389614479
+    [:vvalue] => auth|s:23:"52d391d1672af4.22633466";_sess_sysconfig|a:0:{}_sess_HTTP_SERVER_VARS|a:30:{s:15:"REDIRECT_STATUS";s:3:"200";s:9:"HTTP_HOST";s:17:"poetry.host56.com";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:11:"HTTP_ACCEPT";s:74:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8";s:15:"HTTP_USER_AGENT";s:108:"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.72 Safari/537.36";s:12:"HTTP_REFERER";s:25:"http://poetry.host56.com/";s:20:"HTTP_ACCEPT_ENCODING";s:17:"gzip,deflate,sdch";s:20:"HTTP_ACCEPT_LANGUAGE";s:56:"zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4,ja;q=0.2,zh-CN;q=0.2";s:11:"HTTP_COOKIE";s:54:"timezone=8; PHPSESSID=94b7acd95769a1cb320a742829d79c8e";s:4:"PATH";s:29:"/sbin:/bin:/usr/sbin:/usr/bin";s:16:"SERVER_SIGNATURE";s:0:"";s:15:"SERVER_SOFTWARE";s:6:"Apache";s:11:"SERVER_NAME";s:17:"poetry.host56.com";s:11:"SERVER_ADDR";s:14:"31.170.160.229";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:13:"59.120.37.117";s:13:"DOCUMENT_ROOT";s:24:"/usr/local/apache/htdocs";s:12:"SERVER_ADMIN";s:20:"admin@000webhost.com";s:15:"SCRIPT_FILENAME";s:32:"/www/poetry.host56.com/index.php";s:11:"REMOTE_PORT";s:5:"59680";s:21:"REDIRECT_QUERY_STRING";s:14:"route=poetry/2";s:12:"REDIRECT_URL";s:9:"/poetry/2";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:3:"GET";s:12:"QUERY_STRING";s:14:"route=poetry/2";s:11:"REQUEST_URI";s:9:"/poetry/2";s:11:"SCRIPT_NAME";s:10:"/index.php";s:8:"PHP_SELF";s:10:"/index.php";s:12:"REQUEST_TIME";i:1389597137;}login.next|s:1:"/";_sess_user_id|s:1:"1";_sess_user_account|s:5:"sysop";_sess_user_name|s:15:"系統管理員";_sess_user_email|s:17:"culaido@gmail.com";_sess_user_role|s:3:"1,0";_sess_user_roleAry|a:2:{i:0;s:1:"1";i:1;i:0;}loginSince|i:1389597208;view|a:1:{s:6:"poetry";a:1:{i:616;i:1;}}
+    [:sesskey] => 94b7acd95769a1cb320a742829d79c8e
+    [:userID] => 1
+)
+
+[file: /home/a4834786/public_html/sys/core/sys.php line: 139] 2014-01-13 16:01:19:
+ 
+ Error: MySQL server has gone away
+[file: D:\web\poetry\sys\core\sys.php line: 80] 2014-01-22 21:02:53:
+ #0  db::showErr(SELECT SQL_CALC_FOUND_ROWS  * FROM poetry WHERE (Array LIKE :Array)  AND tonality=:tonality  AND uploadComplete=:uploadComplete LIMIT 30, 30, Array ([:Array] => %%,[:tonality] => 2,[:uploadComplete] => 1)) called at [D:\web\poetry\sys\core\sys.php:80]
+#1  db::select(SELECT SQL_CALC_FOUND_ROWS  * FROM poetry WHERE (Array LIKE :Array)  AND tonality=:tonality  AND uploadComplete=:uploadComplete LIMIT 30, 30, Array ([:Array] => %%,[:tonality] => 2,[:uploadComplete] => 1)) called at [D:\web\poetry\sys\libs\class\sqllist.php:32]
+#2  SQLList->SQLList(Array ([query] => Array ([sql] => SELECT * FROM poetry WHERE (Array LIKE :Array)  AND tonality=:tonality  AND uploadComplete=:uploadComplete,[param] => Array ([:Array] => %%,[:tonality] => 2,[:uploadComplete] => 1)),[page] => 2,[size] => 30)) called at [D:\web\poetry\sys\pages\search\action\base.inc:45]
+#3  require(D:\web\poetry\sys\pages\search\action\base.inc) called at [D:\web\poetry\sys\pages\search\search.php:16]
+#4  search->exec(Array (), ) called at [D:\web\poetry\sys\core\app.php:112]
+#5  App->loadPage() called at [D:\web\poetry\sys\core\sys.php:234]
+#6  sys::init() called at [D:\web\poetry\index.php:5]
+
+ SQL: SELECT SQL_CALC_FOUND_ROWS  * FROM poetry WHERE (Array LIKE :Array)  AND tonality=:tonality  AND uploadComplete=:uploadComplete LIMIT 30, 30
+Array
+(
+    [:Array] => %%
+    [:tonality] => 2
+    [:uploadComplete] => 1
+)
+
+[file: D:\web\poetry\sys\core\sys.php line: 80] 2014-01-22 21:02:53:
+ 
+ Error: Unknown column 'Array' in 'where clause'
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 80] 2014-01-31 17:18:12:
+ #0  db::showErr(SELECT * FROM playlist WHERE FIND_IN_SET(userID, ?), Array ([0] => 1)) called at [D:\web\poetry\poetry\sys\core\sys.php:80]
+#1  db::select(SELECT * FROM playlist WHERE FIND_IN_SET(userID, ?), Array ([0] => 1)) called at [D:\web\poetry\poetry\sys\pages\playlist\playlist.php:32]
+#2  playlist->get(1, userID) called at [D:\web\poetry\poetry\sys\pages\playlist\action\addItem.inc:23]
+#3  require(D:\web\poetry\poetry\sys\pages\playlist\action\addItem.inc) called at [D:\web\poetry\poetry\sys\pages\playlist\playlist.php:19]
+#4  playlist->exec(Array ([0] => ), addItem) called at [D:\web\poetry\poetry\sys\core\app.php:114]
+#5  App->loadPage() called at [D:\web\poetry\poetry\sys\core\sys.php:234]
+#6  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: SELECT * FROM playlist WHERE FIND_IN_SET(userID, ?)
+Array
+(
+    [0] => 1
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 80] 2014-01-31 17:18:12:
+ 
+ Error: Unknown column 'userID' in 'where clause'
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 80] 2014-01-31 17:18:15:
+ #0  db::showErr(SELECT * FROM playlist WHERE FIND_IN_SET(userID, ?), Array ([0] => 1)) called at [D:\web\poetry\poetry\sys\core\sys.php:80]
+#1  db::select(SELECT * FROM playlist WHERE FIND_IN_SET(userID, ?), Array ([0] => 1)) called at [D:\web\poetry\poetry\sys\pages\playlist\playlist.php:32]
+#2  playlist->get(1, userID) called at [D:\web\poetry\poetry\sys\pages\playlist\action\addItem.inc:22]
+#3  require(D:\web\poetry\poetry\sys\pages\playlist\action\addItem.inc) called at [D:\web\poetry\poetry\sys\pages\playlist\playlist.php:19]
+#4  playlist->exec(Array ([0] => ), addItem) called at [D:\web\poetry\poetry\sys\core\app.php:114]
+#5  App->loadPage() called at [D:\web\poetry\poetry\sys\core\sys.php:234]
+#6  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: SELECT * FROM playlist WHERE FIND_IN_SET(userID, ?)
+Array
+(
+    [0] => 1
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 80] 2014-01-31 17:18:15:
+ 
+ Error: Unknown column 'userID' in 'where clause'
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-01-31 21:47:32:
+ #0  db::showErr(INSERT INTO playlist SET title=:title, creator=NOW(), lastUpdate=NOW(), Array ([:title] => test,[:creator] => 1)) called at [D:\web\poetry\poetry\sys\core\sys.php:139]
+#1  db::query(INSERT INTO playlist SET title=:title, creator=NOW(), lastUpdate=NOW(), Array ([:title] => test,[:creator] => 1)) called at [D:\web\poetry\poetry\sys\pages\playlist\playlist.php:77]
+#2  playlist->create(Array ([title] => test)) called at [D:\web\poetry\poetry\sys\pages\playlist\playlist.php:49]
+#3  playlist->formSave() called at [D:\web\poetry\poetry\sys\core\app.php:126]
+#4  App->actSave() called at [D:\web\poetry\poetry\sys\core\sys.php:240]
+#5  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: INSERT INTO playlist SET title=:title, creator=NOW(), lastUpdate=NOW()
+Array
+(
+    [:title] => test
+    [:creator] => 1
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-01-31 21:47:32:
+ 
+ Error: 
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-01-31 21:48:11:
+ #0  db::showErr(INSERT INTO playlist SET title=:title, creator=:creator, createTime=:NOW(), lastUpdate=NOW(), Array ([:title] => test,[:creator] => 1)) called at [D:\web\poetry\poetry\sys\core\sys.php:139]
+#1  db::query(INSERT INTO playlist SET title=:title, creator=:creator, createTime=:NOW(), lastUpdate=NOW(), Array ([:title] => test,[:creator] => 1)) called at [D:\web\poetry\poetry\sys\pages\playlist\playlist.php:77]
+#2  playlist->create(Array ([title] => test)) called at [D:\web\poetry\poetry\sys\pages\playlist\playlist.php:49]
+#3  playlist->formSave() called at [D:\web\poetry\poetry\sys\core\app.php:126]
+#4  App->actSave() called at [D:\web\poetry\poetry\sys\core\sys.php:240]
+#5  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: INSERT INTO playlist SET title=:title, creator=:creator, createTime=:NOW(), lastUpdate=NOW()
+Array
+(
+    [:title] => test
+    [:creator] => 1
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-01-31 21:48:11:
+ 
+ Error: 
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 80] 2014-01-31 23:08:46:
+ #0  db::showErr(SELECT * FORM playlist_item WHERE creator=:creator AND pageId=:pageId, Array ([:creator] => 1,[:pageId] => poetry.3)) called at [D:\web\poetry\poetry\sys\core\sys.php:80]
+#1  db::select(SELECT * FORM playlist_item WHERE creator=:creator AND pageId=:pageId, Array ([:creator] => 1,[:pageId] => poetry.3)) called at [D:\web\poetry\poetry\sys\pages\playlist\action\addItem.inc:36]
+#2  require(D:\web\poetry\poetry\sys\pages\playlist\action\addItem.inc) called at [D:\web\poetry\poetry\sys\pages\playlist\playlist.php:141]
+#3  playlist->exec(Array ([0] => ), addItem) called at [D:\web\poetry\poetry\sys\core\app.php:114]
+#4  App->loadPage() called at [D:\web\poetry\poetry\sys\core\sys.php:234]
+#5  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: SELECT * FORM playlist_item WHERE creator=:creator AND pageId=:pageId
+Array
+(
+    [:creator] => 1
+    [:pageId] => poetry.3
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 80] 2014-01-31 23:08:46:
+ 
+ Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FORM playlist_item WHERE creator='1' AND pageId='poetry.3'' at line 1
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 80] 2014-02-15 10:42:41:
+ #0  db::showErr(SELECT SQL_CALC_FOUND_ROWS  * FROM poetry WHERE uploadComplete=:uploadComplete ORDER BY folder DESC LIMIT 0, 30, Array ([:uploadComplete] => 1)) called at [D:\web\poetry\poetry\sys\core\sys.php:80]
+#1  db::select(SELECT SQL_CALC_FOUND_ROWS  * FROM poetry WHERE uploadComplete=:uploadComplete ORDER BY folder DESC LIMIT 0, 30, Array ([:uploadComplete] => 1)) called at [D:\web\poetry\poetry\sys\libs\class\sqllist.php:32]
+#2  SQLList->SQLList(Array ([query] => Array ([sql] => SELECT * FROM poetry WHERE uploadComplete=:uploadComplete ORDER BY folder DESC,[param] => Array ([:uploadComplete] => 1)),[page] => 1,[size] => 30)) called at [D:\web\poetry\poetry\sys\modules\mod_poetry\mod_poetry.php:25]
+#3  mod_poetry->ac_mgr(Array ([blockId] => ,[pageId] => mgr,[title] => ,[args] => ,[conf] => ,[_box] => xbox,[_boxpos] => inline)) called at [D:\web\poetry\poetry\sys\core\module.php:128]
+#4  Module->exec(Array ([blockId] => ,[pageId] => mgr,[title] => ,[args] => ,[conf] => ,[_box] => xbox,[_boxpos] => inline), mgr) called at [D:\web\poetry\poetry\sys\core\app.php:271]
+#5  App->loadModule() called at [D:\web\poetry\poetry\sys\core\sys.php:235]
+#6  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: SELECT SQL_CALC_FOUND_ROWS  * FROM poetry WHERE uploadComplete=:uploadComplete ORDER BY folder DESC LIMIT 0, 30
+Array
+(
+    [:uploadComplete] => 1
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 80] 2014-02-15 10:42:41:
+ 
+ Error: Unknown column 'folder' in 'order clause'
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 80] 2014-02-21 22:44:46:
+ #0  db::showErr(SELECT * FROM mod_tag_item WHERE pageId=?, Array ([0] => poetry.337)) called at [D:\web\poetry\poetry\sys\core\sys.php:80]
+#1  db::select(SELECT * FROM mod_tag_item WHERE pageId=?, Array ([0] => poetry.337)) called at [D:\web\poetry\poetry\sys\modules\mod_tag\mod_tag.php:6]
+#2  mod_tag->get(poetry.337) called at [D:\web\poetry\poetry\sys\modules\mod_tag\mod_tag.php:31]
+#3  mod_tag->ac_edit(Array ([blockId] => ,[pageId] => poetry.337,[title] => ,[args] => ,[conf] => ,[_box] => xbox,[_boxpos] => inline)) called at [D:\web\poetry\poetry\sys\core\module.php:128]
+#4  Module->exec(Array ([blockId] => ,[pageId] => poetry.337,[title] => ,[args] => ,[conf] => ,[_box] => xbox,[_boxpos] => inline), edit) called at [D:\web\poetry\poetry\sys\core\app.php:271]
+#5  App->loadModule() called at [D:\web\poetry\poetry\sys\core\sys.php:235]
+#6  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: SELECT * FROM mod_tag_item WHERE pageId=?
+Array
+(
+    [0] => poetry.337
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 80] 2014-02-21 22:44:46:
+ 
+ Error: Table 'poetry.mod_tag_item' doesn't exist
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-02-22 09:16:51:
+ #0  db::showErr(INSERT INTO mod_tag_item SET pageId=:pageId, tagId=:tagId, lastUpdate=NOW(), Array ([:pageId] => poetry.2,[:tagId] => 3)) called at [D:\web\poetry\poetry\sys\core\sys.php:139]
+#1  db::query(INSERT INTO mod_tag_item SET pageId=:pageId, tagId=:tagId, lastUpdate=NOW(), Array ([:pageId] => poetry.2,[:tagId] => 3)) called at [D:\web\poetry\poetry\sys\modules\mod_tag\mod_tag.php:28]
+#2  mod_tag->formSave() called at [D:\web\poetry\poetry\sys\core\app.php:132]
+#3  App->actSave() called at [D:\web\poetry\poetry\sys\core\sys.php:240]
+#4  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: INSERT INTO mod_tag_item SET pageId=:pageId, tagId=:tagId, lastUpdate=NOW()
+Array
+(
+    [:pageId] => poetry.2
+    [:tagId] => 3
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-02-22 09:16:51:
+ 
+ Error: Duplicate entry 'poetry.2-3' for key 'pageId'
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-02-22 09:16:51:
+ #0  db::showErr(INSERT INTO mod_tag_item SET pageId=:pageId, tagId=:tagId, lastUpdate=NOW(), Array ([:pageId] => poetry.2,[:tagId] => 5)) called at [D:\web\poetry\poetry\sys\core\sys.php:139]
+#1  db::query(INSERT INTO mod_tag_item SET pageId=:pageId, tagId=:tagId, lastUpdate=NOW(), Array ([:pageId] => poetry.2,[:tagId] => 5)) called at [D:\web\poetry\poetry\sys\modules\mod_tag\mod_tag.php:28]
+#2  mod_tag->formSave() called at [D:\web\poetry\poetry\sys\core\app.php:132]
+#3  App->actSave() called at [D:\web\poetry\poetry\sys\core\sys.php:240]
+#4  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: INSERT INTO mod_tag_item SET pageId=:pageId, tagId=:tagId, lastUpdate=NOW()
+Array
+(
+    [:pageId] => poetry.2
+    [:tagId] => 5
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-02-22 09:16:51:
+ 
+ Error: Duplicate entry 'poetry.2-5' for key 'pageId'
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-02-22 09:18:56:
+ #0  db::showErr(INSERT INTO mod_tag_item SET pageId=:pageId, tagId=:tagId, lastUpdate=NOW(), Array ([:pageId] => poetry.2,[:tagId] => 3)) called at [D:\web\poetry\poetry\sys\core\sys.php:139]
+#1  db::query(INSERT INTO mod_tag_item SET pageId=:pageId, tagId=:tagId, lastUpdate=NOW(), Array ([:pageId] => poetry.2,[:tagId] => 3)) called at [D:\web\poetry\poetry\sys\modules\mod_tag\mod_tag.php:28]
+#2  mod_tag->formSave() called at [D:\web\poetry\poetry\sys\core\app.php:132]
+#3  App->actSave() called at [D:\web\poetry\poetry\sys\core\sys.php:240]
+#4  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: INSERT INTO mod_tag_item SET pageId=:pageId, tagId=:tagId, lastUpdate=NOW()
+Array
+(
+    [:pageId] => poetry.2
+    [:tagId] => 3
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-02-22 09:18:56:
+ 
+ Error: Duplicate entry 'poetry.2-3' for key 'pageId'
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-02-22 09:18:56:
+ #0  db::showErr(INSERT INTO mod_tag_item SET pageId=:pageId, tagId=:tagId, lastUpdate=NOW(), Array ([:pageId] => poetry.2,[:tagId] => 5)) called at [D:\web\poetry\poetry\sys\core\sys.php:139]
+#1  db::query(INSERT INTO mod_tag_item SET pageId=:pageId, tagId=:tagId, lastUpdate=NOW(), Array ([:pageId] => poetry.2,[:tagId] => 5)) called at [D:\web\poetry\poetry\sys\modules\mod_tag\mod_tag.php:28]
+#2  mod_tag->formSave() called at [D:\web\poetry\poetry\sys\core\app.php:132]
+#3  App->actSave() called at [D:\web\poetry\poetry\sys\core\sys.php:240]
+#4  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: INSERT INTO mod_tag_item SET pageId=:pageId, tagId=:tagId, lastUpdate=NOW()
+Array
+(
+    [:pageId] => poetry.2
+    [:tagId] => 5
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-02-22 09:18:56:
+ 
+ Error: Duplicate entry 'poetry.2-5' for key 'pageId'
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-02-22 09:19:31:
+ #0  db::showErr(INSERT INTO mod_tag_item SET pageId=:pageId, tagId=:tagId, lastUpdate=NOW(), Array ([:pageId] => poetry.2,[:tagId] => 3)) called at [D:\web\poetry\poetry\sys\core\sys.php:139]
+#1  db::query(INSERT INTO mod_tag_item SET pageId=:pageId, tagId=:tagId, lastUpdate=NOW(), Array ([:pageId] => poetry.2,[:tagId] => 3)) called at [D:\web\poetry\poetry\sys\modules\mod_tag\mod_tag.php:28]
+#2  mod_tag->formSave() called at [D:\web\poetry\poetry\sys\core\app.php:132]
+#3  App->actSave() called at [D:\web\poetry\poetry\sys\core\sys.php:240]
+#4  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: INSERT INTO mod_tag_item SET pageId=:pageId, tagId=:tagId, lastUpdate=NOW()
+Array
+(
+    [:pageId] => poetry.2
+    [:tagId] => 3
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-02-22 09:19:31:
+ 
+ Error: Duplicate entry 'poetry.2-3' for key 'pageId'
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-02-22 09:19:31:
+ #0  db::showErr(INSERT INTO mod_tag_item SET pageId=:pageId, tagId=:tagId, lastUpdate=NOW(), Array ([:pageId] => poetry.2,[:tagId] => 5)) called at [D:\web\poetry\poetry\sys\core\sys.php:139]
+#1  db::query(INSERT INTO mod_tag_item SET pageId=:pageId, tagId=:tagId, lastUpdate=NOW(), Array ([:pageId] => poetry.2,[:tagId] => 5)) called at [D:\web\poetry\poetry\sys\modules\mod_tag\mod_tag.php:28]
+#2  mod_tag->formSave() called at [D:\web\poetry\poetry\sys\core\app.php:132]
+#3  App->actSave() called at [D:\web\poetry\poetry\sys\core\sys.php:240]
+#4  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: INSERT INTO mod_tag_item SET pageId=:pageId, tagId=:tagId, lastUpdate=NOW()
+Array
+(
+    [:pageId] => poetry.2
+    [:tagId] => 5
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-02-22 09:19:31:
+ 
+ Error: Duplicate entry 'poetry.2-5' for key 'pageId'
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 80] 2014-02-28 16:32:21:
+ #0  db::showErr(SELECT SQL_CALC_FOUND_ROWS  * FROM tag_item WHERE tagId=? ORDER BY no DESC LIMIT 0, 30, Array ([0] => 6)) called at [D:\web\poetry\poetry\sys\core\sys.php:80]
+#1  db::select(SELECT SQL_CALC_FOUND_ROWS  * FROM tag_item WHERE tagId=? ORDER BY no DESC LIMIT 0, 30, Array ([0] => 6)) called at [D:\web\poetry\poetry\sys\libs\class\sqllist.php:32]
+#2  SQLList->SQLList(Array ([query] => Array ([sql] => SELECT * FROM tag_item WHERE tagId=? ORDER BY no DESC,[param] => Array ([0] => 6)),[page] => 1,[size] => 30)) called at [D:\web\poetry\poetry\sys\pages\tag\tag.php:25]
+#3  tag->exec(Array ([0] => 6), ) called at [D:\web\poetry\poetry\sys\core\app.php:114]
+#4  App->loadPage() called at [D:\web\poetry\poetry\sys\core\sys.php:234]
+#5  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: SELECT SQL_CALC_FOUND_ROWS  * FROM tag_item WHERE tagId=? ORDER BY no DESC LIMIT 0, 30
+Array
+(
+    [0] => 6
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 80] 2014-02-28 16:32:21:
+ 
+ Error: Unknown column 'no' in 'order clause'
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-04-23 22:17:16:
+ #0  db::showErr(INSERT INTO comment SET userId=:userId, lastUpdate=NOW(), Array ([:userId] => 1)) called at [D:\web\poetry\poetry\sys\core\sys.php:139]
+#1  db::query(INSERT INTO comment SET userId=:userId, lastUpdate=NOW(), Array ([:userId] => 1)) called at [D:\web\poetry\poetry\sys\pages\comment\comment.php:50]
+#2  comment->create() called at [D:\web\poetry\poetry\sys\pages\comment\comment.php:17]
+#3  comment->exec(Array ([0] => ), add) called at [D:\web\poetry\poetry\sys\core\app.php:114]
+#4  App->loadPage() called at [D:\web\poetry\poetry\sys\core\sys.php:234]
+#5  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: INSERT INTO comment SET userId=:userId, lastUpdate=NOW()
+Array
+(
+    [:userId] => 1
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-04-23 22:17:16:
+ 
+ Error: Table 'poetry.comment' doesn't exist
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-04-23 22:17:26:
+ #0  db::showErr(INSERT INTO comment SET userId=:userId, lastUpdate=NOW(), Array ([:userId] => 1)) called at [D:\web\poetry\poetry\sys\core\sys.php:139]
+#1  db::query(INSERT INTO comment SET userId=:userId, lastUpdate=NOW(), Array ([:userId] => 1)) called at [D:\web\poetry\poetry\sys\pages\comment\comment.php:50]
+#2  comment->create() called at [D:\web\poetry\poetry\sys\pages\comment\comment.php:17]
+#3  comment->exec(Array ([0] => ), add) called at [D:\web\poetry\poetry\sys\core\app.php:114]
+#4  App->loadPage() called at [D:\web\poetry\poetry\sys\core\sys.php:234]
+#5  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: INSERT INTO comment SET userId=:userId, lastUpdate=NOW()
+Array
+(
+    [:userId] => 1
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-04-23 22:17:26:
+ 
+ Error: Table 'poetry.comment' doesn't exist
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 80] 2014-04-23 22:17:26:
+ #0  db::showErr(SELECT * FROM comment WHERE id=?, Array ([0] => 0)) called at [D:\web\poetry\poetry\sys\core\sys.php:80]
+#1  db::select(SELECT * FROM comment WHERE id=?, Array ([0] => 0)) called at [D:\web\poetry\poetry\sys\core\sys.php:88]
+#2  db::fetch(SELECT * FROM comment WHERE id=?, Array ([0] => 0)) called at [D:\web\poetry\poetry\sys\pages\comment\comment.php:59]
+#3  comment->get(0) called at [D:\web\poetry\poetry\sys\pages\comment\action\edit.inc:3]
+#4  require(D:\web\poetry\poetry\sys\pages\comment\action\edit.inc) called at [D:\web\poetry\poetry\sys\pages\comment\comment.php:37]
+#5  comment->exec(Array ([0] => ), edit) called at [D:\web\poetry\poetry\sys\core\app.php:114]
+#6  App->loadPage() called at [D:\web\poetry\poetry\sys\core\sys.php:234]
+#7  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: SELECT * FROM comment WHERE id=?
+Array
+(
+    [0] => 0
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 80] 2014-04-23 22:17:26:
+ 
+ Error: Table 'poetry.comment' doesn't exist
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-04-23 22:19:58:
+ #0  db::showErr(INSERT INTO comment SET updater=:updater, creator=:creator, creator=:creator, lastUpdate=NOW(), Array ([:creator] => 1,[:updater] => )) called at [D:\web\poetry\poetry\sys\core\sys.php:139]
+#1  db::query(INSERT INTO comment SET updater=:updater, creator=:creator, creator=:creator, lastUpdate=NOW(), Array ([:creator] => 1,[:updater] => )) called at [D:\web\poetry\poetry\sys\pages\comment\comment.php:51]
+#2  comment->create() called at [D:\web\poetry\poetry\sys\pages\comment\comment.php:17]
+#3  comment->exec(Array ([0] => ), add) called at [D:\web\poetry\poetry\sys\core\app.php:114]
+#4  App->loadPage() called at [D:\web\poetry\poetry\sys\core\sys.php:234]
+#5  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: INSERT INTO comment SET updater=:updater, creator=:creator, creator=:creator, lastUpdate=NOW()
+Array
+(
+    [:creator] => 1
+    [:updater] => 
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-04-23 22:19:58:
+ 
+ Error: Column 'creator' specified twice
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-04-23 22:21:08:
+ #0  db::showErr(INSERT INTO comment SET updater=:updater, creator=:creator, creator=:creator, lastUpdate=NOW(), Array ([:creator] => 1,[:updater] => )) called at [D:\web\poetry\poetry\sys\core\sys.php:139]
+#1  db::query(INSERT INTO comment SET updater=:updater, creator=:creator, creator=:creator, lastUpdate=NOW(), Array ([:creator] => 1,[:updater] => )) called at [D:\web\poetry\poetry\sys\pages\comment\comment.php:51]
+#2  comment->create() called at [D:\web\poetry\poetry\sys\pages\comment\comment.php:17]
+#3  comment->exec(Array ([0] => ), add) called at [D:\web\poetry\poetry\sys\core\app.php:114]
+#4  App->loadPage() called at [D:\web\poetry\poetry\sys\core\sys.php:234]
+#5  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: INSERT INTO comment SET updater=:updater, creator=:creator, creator=:creator, lastUpdate=NOW()
+Array
+(
+    [:creator] => 1
+    [:updater] => 
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-04-23 22:21:08:
+ 
+ Error: Column 'creator' specified twice
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-04-23 22:21:42:
+ #0  db::showErr(INSERT INTO comment SET updater=:updater, creator=:creator, lastUpdate=NOW(), Array ([:creator] => 1,[:updater] => )) called at [D:\web\poetry\poetry\sys\core\sys.php:139]
+#1  db::query(INSERT INTO comment SET updater=:updater, creator=:creator, lastUpdate=NOW(), Array ([:creator] => 1,[:updater] => )) called at [D:\web\poetry\poetry\sys\pages\comment\comment.php:51]
+#2  comment->create() called at [D:\web\poetry\poetry\sys\pages\comment\comment.php:17]
+#3  comment->exec(Array ([0] => ), add) called at [D:\web\poetry\poetry\sys\core\app.php:114]
+#4  App->loadPage() called at [D:\web\poetry\poetry\sys\core\sys.php:234]
+#5  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: INSERT INTO comment SET updater=:updater, creator=:creator, lastUpdate=NOW()
+Array
+(
+    [:creator] => 1
+    [:updater] => 
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-04-23 22:21:42:
+ 
+ Error: Column 'updater' cannot be null
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-04-25 21:35:35:
+ #0  db::showErr(INSERT INTO recent SET userId=:userId, poetryId=:poetryId, lastUpdate=NOW() ON DUPLICATE KEY UPDATE lastUpdate=NOW(), Array ([:userId] => 1,[:poetryId] => 2)) called at [D:\web\poetry\poetry\sys\core\sys.php:139]
+#1  db::query(INSERT INTO recent SET userId=:userId, poetryId=:poetryId, lastUpdate=NOW() ON DUPLICATE KEY UPDATE lastUpdate=NOW(), Array ([:userId] => 1,[:poetryId] => 2)) called at [D:\web\poetry\poetry\sys\pages\recent\recent.php:95]
+#2  recent->updateLog(1, 2) called at [D:\web\poetry\poetry\sys\pages\poetry\action\base.inc:69]
+#3  require(D:\web\poetry\poetry\sys\pages\poetry\action\base.inc) called at [D:\web\poetry\poetry\sys\pages\poetry\poetry.php:48]
+#4  poetry->exec(Array ([0] => 2), ) called at [D:\web\poetry\poetry\sys\core\app.php:114]
+#5  App->loadPage() called at [D:\web\poetry\poetry\sys\core\sys.php:234]
+#6  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: INSERT INTO recent SET userId=:userId, poetryId=:poetryId, lastUpdate=NOW() ON DUPLICATE KEY UPDATE lastUpdate=NOW()
+Array
+(
+    [:userId] => 1
+    [:poetryId] => 2
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-04-25 21:35:35:
+ 
+ Error: Table 'poetry.recent' doesn't exist
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-04-25 21:35:47:
+ #0  db::showErr(INSERT INTO recent SET userId=:userId, poetryId=:poetryId, lastUpdate=NOW() ON DUPLICATE KEY UPDATE lastUpdate=NOW(), Array ([:userId] => 1,[:poetryId] => 2)) called at [D:\web\poetry\poetry\sys\core\sys.php:139]
+#1  db::query(INSERT INTO recent SET userId=:userId, poetryId=:poetryId, lastUpdate=NOW() ON DUPLICATE KEY UPDATE lastUpdate=NOW(), Array ([:userId] => 1,[:poetryId] => 2)) called at [D:\web\poetry\poetry\sys\pages\recent\recent.php:95]
+#2  recent->updateLog(1, 2) called at [D:\web\poetry\poetry\sys\pages\poetry\action\base.inc:68]
+#3  require(D:\web\poetry\poetry\sys\pages\poetry\action\base.inc) called at [D:\web\poetry\poetry\sys\pages\poetry\poetry.php:48]
+#4  poetry->exec(Array ([0] => 2), ) called at [D:\web\poetry\poetry\sys\core\app.php:114]
+#5  App->loadPage() called at [D:\web\poetry\poetry\sys\core\sys.php:234]
+#6  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: INSERT INTO recent SET userId=:userId, poetryId=:poetryId, lastUpdate=NOW() ON DUPLICATE KEY UPDATE lastUpdate=NOW()
+Array
+(
+    [:userId] => 1
+    [:poetryId] => 2
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 139] 2014-04-25 21:35:47:
+ 
+ Error: Table 'poetry.recent' doesn't exist
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 80] 2014-05-09 23:00:17:
+ #0  db::showErr(SELECT SQL_CALC_FOUND_ROWS  * FROM poetry WHERE tags LIKE tags LIKE :tag0 LIMIT 0, 30, Array ([:tag0] => %,6,%)) called at [D:\web\poetry\poetry\sys\core\sys.php:80]
+#1  db::select(SELECT SQL_CALC_FOUND_ROWS  * FROM poetry WHERE tags LIKE tags LIKE :tag0 LIMIT 0, 30, Array ([:tag0] => %,6,%)) called at [D:\web\poetry\poetry\sys\libs\class\sqllist.php:32]
+#2  SQLList->SQLList(Array ([query] => Array ([sql] => 
+					SELECT * FROM poetry WHERE tags LIKE tags LIKE :tag0,[param] => Array ([:tag0] => %,6,%)),[page] => 1,[size] => 30)) called at [D:\web\poetry\poetry\sys\pages\tag\tag.php:34]
+#3  tag->exec(Array (), ) called at [D:\web\poetry\poetry\sys\core\app.php:114]
+#4  App->loadPage() called at [D:\web\poetry\poetry\sys\core\sys.php:234]
+#5  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: SELECT SQL_CALC_FOUND_ROWS  * FROM poetry WHERE tags LIKE tags LIKE :tag0 LIMIT 0, 30
+Array
+(
+    [:tag0] => %,6,%
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 80] 2014-05-09 23:00:17:
+ 
+ Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%,6,%' LIMIT 0, 30' at line 1
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 80] 2014-05-25 09:04:38:
+ #0  db::showErr(SELECT * FROM playlist WHERE priv=:priv ORDER BY id DESC LIMIT 10, Array ([:priv] => 0,[:creator] => 1)) called at [D:\web\poetry\poetry\sys\core\sys.php:80]
+#1  db::select(SELECT * FROM playlist WHERE priv=:priv ORDER BY id DESC LIMIT 10, Array ([:priv] => 0,[:creator] => 1)) called at [D:\web\poetry\poetry\sys\modules\mod_playlist\mod_playlist.php:75]
+#2  mod_playlist->ac_list(Array ([blockId] => ,[pageId] => index,[title] => ,[args] => ,[conf] => ,[_box] => mbox,[_boxpos] => inline)) called at [D:\web\poetry\poetry\sys\core\module.php:129]
+#3  Module->exec(Array ([blockId] => ,[pageId] => index,[title] => ,[args] => ,[conf] => ,[_box] => mbox,[_boxpos] => inline), list) called at [D:\web\poetry\poetry\sys\core\app.php:271]
+#4  App->loadModule() called at [D:\web\poetry\poetry\sys\core\sys.php:235]
+#5  sys::init() called at [D:\web\poetry\poetry\index.php:5]
+
+ SQL: SELECT * FROM playlist WHERE priv=:priv ORDER BY id DESC LIMIT 10
+Array
+(
+    [:priv] => 0
+    [:creator] => 1
+)
+
+[file: D:\web\poetry\poetry\sys\core\sys.php line: 80] 2014-05-25 09:04:38:
+ 
+ Error: 

@@ -1,0 +1,8 @@
+.cke_button__source_label,
+.cke_button__sourcedialog_label {display:none !important}
+
+.cke_dialog select, .cke_dialog textarea, .cke_dialog input, .cke_dialog .uneditable-input {
+	height:auto !important;
+	font-size:12px !important;
+	line-height:normal !important;
+}

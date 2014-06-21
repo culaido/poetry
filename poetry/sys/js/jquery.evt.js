@@ -1,0 +1,1 @@
+var evts={};jQuery.Evt=function(e){var t,n,r=e&&evts[e];if(!r){t=jQuery.Callbacks();r={publish:t.fire,subscribe:t.add,unsubscribe:t.remove};if(e){evts[e]=r}}return r}
